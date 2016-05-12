@@ -3,21 +3,21 @@
   <script type="text/javascript">
   var myAudio = document.createElement('audio');
   myAudio.setAttribute('src', './audio/audio1.mp3');
-  myAudio.playbackRate = 10; // for testing purposes
+  // myAudio.playbackRate = 10; // for testing purposes
   myAudio.play();
   myAudio.addEventListener("ended", function() {
     var audAttribute = myAudio.getAttribute('src');
     if (audAttribute === "./audio/audio1.mp3") {
       myAudio.setAttribute('src', './audio/audio2.mp3');
-      myAudio.playbackRate = 50; // testing
+      // myAudio.playbackRate = 50; // testing
       myAudio.play();
     } else if (audAttribute === "./audio/audio2.mp3") {
       myAudio.setAttribute('src', './audio/audio3.mp3');
-      myAudio.playbackRate = 50; // testing
+      // myAudio.playbackRate = 50; // testing
       myAudio.play();
     } else {
       myAudio.setAttribute('src', './audio/audio1.mp3');
-      myAudio.playbackRate = 50; // testing
+      // myAudio.playbackRate = 50; // testing
       myAudio.play();
     }
   });
