@@ -1,5 +1,6 @@
+<html>
 <head>
-  <script>
+  <script type="text/javascript">
 var myAudio = document.createElement('audio');
 myAudio.setAttribute('src', './audio/audio1.mp3');
 myAudio.play();
@@ -16,21 +17,13 @@ myAudio.addEventListener("ended", function() {
     myAudio.play();
   };
 });
+myAudio.addEventListener("loadeddata", function() {
+    var container = document.getElementById("cont");
+    var content = container.innerHTML;
+    container.innerHTML= content;
+});
 </script>
-
-</head>
-<body>
-<!--
-What I need:
-Current Title:
-Artist:
-Duration:
--->
-
-<h1 id="piece"></h1>
-<h2 id="dur"></h2>
-<p id="details"></p>
-<script>
+<script type="text/javascript">
 var title = "Bits & Pieces";
 var about = "Placeholder";
 var duration = "Placeholder";
@@ -45,7 +38,7 @@ if (currentPlaying = "./audio/audio1.mp3") {
   document.getElementById("dur").innerHTML = duration;
 } else if (currentPlaying = "./audio/audio2.mp3") {
   title = "Put Together To Present";
-  about = "Is a work that draws upon the sonic environment of Auction Rooms Cafe, North Melbourne. Field recordings, manipulations, synthesis, coffee!";
+  about = "Is a work that draws upon the sonic environment of Auction Rooms Cafe, North Melbourne. Field recordings, manipulations, synthesis, coffee! Warning: there are major fluctuations in the volume of this piece.";
   duration = "17 minutes 24 seconds";
   document.getElementById("piece").innerHTML = title;
   document.getElementById("details").innerHTML = about;
@@ -58,13 +51,16 @@ if (currentPlaying = "./audio/audio1.mp3") {
   document.getElementById("details").innerHTML = about;
   document.getElementById("dur").innerHTML = duration;
 };
-
 </script>
 
+</head>
+<body>
 
-
-
-
-
+<div id="cont">
+<h1 id="piece"></h1>
+<h2 id="dur"></h2>
+<p id="details"></p>
+</div>
 
 </body>
+</html>
