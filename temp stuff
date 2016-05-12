@@ -1,0 +1,41 @@
+//
+// var n = 1;
+// var title = "Bits & Pieces";
+// var current = new Audio("./audio/audio3.wav");
+// <!--/*  var audio = document.getElementById("current");
+//   var title = document.getElementById("heading1");
+//
+//   audio.addEventListener("ended", function() {
+//     if n > 3 {
+//       n = 1;
+//     } else {
+//       n++;
+//     }
+//     then {
+//       current = new Audio("./audio/audio" + n + ".wav");
+//     };
+// }); */-->
+// current.controls = true;
+// current.loop = true;
+// current.autoplay = true;
+// document.body.appendChild(current);
+// document.getElementById(piece).innerHTML = title;
+// var current = new Audio("./audio/audio1.mp3");
+// current.controls = true;
+// current.loop = true;
+// current.autoplay = true;
+// document.body.appendChild(current);
+// audio.addEventListener("ended", function() {
+//   if (current = new Audio("./audio/audio1.mp3")) {
+//     current = new Audio("./audio/audio2.mp3");
+//     document.body.appendChild(current);
+//   };
+//     elseif (current = new Audio("./audio/audio2.mp3")) {
+//       current = new Audio("./audio/audio3.wav");
+//       document.body.appendChild(current);
+//     };
+//       elseif (current = new Audio("./audio/audio1.mp3")) {
+//         current = new Audio("./audio/audio3.wav");
+//         document.body.appendChild(current);
+//       };
+// });
