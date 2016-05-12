@@ -1,24 +1,50 @@
-<-- I think this is where everything lives -->
 <head>
-  <script type="text/javascript">
-
-function setup() {
-    var i=1;
-    var nextSong= "";
-    audioPlayer = document.getElementById('audio');
-    document.getElementById('audio').addEventListener('ended', function(){
-        i=i+1;
-        nextSong = "m"+i+".aif";
-        audioPlayer.src = nextSong;
-        audioPlayer.load();
-        audioPlayer.play();
-        }, false);
-
-}
+  <script>
+  //
+  // var n = 1;
+  // var title = "Bits & Pieces";
+  // var current = new Audio("./audio/audio3.wav");
+  // <!--/*  var audio = document.getElementById("current");
+  //   var title = document.getElementById("heading1");
+  //
+  //   audio.addEventListener("ended", function() {
+  //     if n > 3 {
+  //       n = 1;
+  //     } else {
+  //       n++;
+  //     }
+  //     then {
+  //       current = new Audio("./audio/audio" + n + ".wav");
+  //     };
+  // }); */-->
+  // current.controls = true;
+  // current.loop = true;
+  // current.autoplay = true;
+  // document.body.appendChild(current);
+  // document.getElementById(piece).innerHTML = title;
+var current = new Audio("./audio/audio3.wav");
+current.controls = true;
+current.loop = true;
+current.autoplay = true;
+document.body.appendChild(current);
 </script>
 </head>
-<body onLoad="setup();">
-<audio id="audio"  src="m1.aif" controls="controls" autoplay="autoplay" align=""> </audio>
-<h2>Now playing:</h2>
-<h1><script><-- here lies a script to display metadata--></script></h1>
+<body>
+<!--
+What I need:
+Current Title:
+Artist:
+Duration:
+-->
+
+<h1 id="piece"></h1>
+<p id="details"></p>
+<script>
+var title = "Bits & Pieces";
+document.getElementById("piece").innerHTML = title;
+</script>
+
+
+
+
 </body>

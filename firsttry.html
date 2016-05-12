@@ -1,0 +1,25 @@
+<-- I think this is where everything lives
+<head>
+  <script type="text/javascript">
+
+function setup() {
+    var i=1;
+    var nextSong= "";
+    audioPlayer = document.getElementById('audio');
+    document.getElementById('audio').addEventListener('ended', function(){
+        i=i+1;
+        nextSong = "m"+i+".aif";
+        audioPlayer.src = nextSong;
+        audioPlayer.load();
+        audioPlayer.play();
+        }, false);
+
+}
+</script>
+</head>
+<body onLoad="setup();">
+<audio id="audio"  src="m1.aif" controls="controls" autoplay="autoplay" align=""> </audio>
+<h2>Now playing:</h2>
+<h1><script><-- here lies a script to display metadata--></script></h1>
+</body>
+-->
