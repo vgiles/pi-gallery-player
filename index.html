@@ -1,32 +1,22 @@
 <head>
   <script>
-  //
-  // var n = 1;
-  // var title = "Bits & Pieces";
-  // var current = new Audio("./audio/audio3.wav");
-  // <!--/*  var audio = document.getElementById("current");
-  //   var title = document.getElementById("heading1");
-  //
-  //   audio.addEventListener("ended", function() {
-  //     if n > 3 {
-  //       n = 1;
-  //     } else {
-  //       n++;
-  //     }
-  //     then {
-  //       current = new Audio("./audio/audio" + n + ".wav");
-  //     };
-  // }); */-->
-  // current.controls = true;
-  // current.loop = true;
-  // current.autoplay = true;
-  // document.body.appendChild(current);
-  // document.getElementById(piece).innerHTML = title;
-var current = new Audio("./audio/audio3.wav");
-current.controls = true;
-current.loop = true;
-current.autoplay = true;
-document.body.appendChild(current);
+var myAudio = document.createElement('audio');
+myAudio.setAttribute('src', './audio/audio1.mp3');
+myAudio.play();
+myAudio.addEventListener("ended", function() {
+  if (myAudio.getAttribute('src') = './audio/audio1.mp3') {
+    myAudio.setAttribute('src', './audio/audio2.mp3');
+    myAudio.play();
+  } else if (myAudio.getAttribute('src') = './audio/audio2.mp3') {
+    myAudio.setAttribute('src', './audio/audio3.wav');
+    myAudio.play();
+  } else {
+    myAudio.setAttribute('src', './audio/audio1.mp3');
+    myAudio.play();
+  };
+});
+
+
 </script>
 </head>
 <body>
@@ -43,6 +33,10 @@ Duration:
 var title = "Bits & Pieces";
 document.getElementById("piece").innerHTML = title;
 </script>
+<audio id="piece1" src="./audio/audio1.mp3"></audio>
+
+
+
 
 
 
