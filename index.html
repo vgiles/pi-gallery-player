@@ -2,21 +2,21 @@
 <head>
   <script type="text/javascript">
   var myAudio = document.createElement('audio');
-  myAudio.setAttribute('src', './audio/audio1.mp3');
+  myAudio.setAttribute('src', './audio/audio1.ogg');
   // myAudio.playbackRate = 10; // for testing purposes
   myAudio.play();
   myAudio.addEventListener("ended", function() {
     var audAttribute = myAudio.getAttribute('src');
-    if (audAttribute === "./audio/audio1.mp3") {
-      myAudio.setAttribute('src', './audio/audio2.mp3');
+    if (audAttribute === "./audio/audio1.ogg") {
+      myAudio.setAttribute('src', './audio/audio2.ogg');
       // myAudio.playbackRate = 50; // testing
       myAudio.play();
-    } else if (audAttribute === "./audio/audio2.mp3") {
-      myAudio.setAttribute('src', './audio/audio3.mp3');
+    } else if (audAttribute === "./audio/audio2.ogg") {
+      myAudio.setAttribute('src', './audio/audio3.ogg');
       // myAudio.playbackRate = 50; // testing
       myAudio.play();
     } else {
-      myAudio.setAttribute('src', './audio/audio1.mp3');
+      myAudio.setAttribute('src', './audio/audio1.ogg');
       // myAudio.playbackRate = 50; // testing
       myAudio.play();
     }
@@ -77,14 +77,14 @@
     var commission2 = "Commissioned by Ochre Trio, 2015";
     var currentPlaying = myAudio.getAttribute('src');
 
-    if (currentPlaying === "./audio/audio1.mp3") {
+    if (currentPlaying === "./audio/audio1.ogg") {
       var title = "Bits & Pieces";
       var about = "Is a sonification of the data of a coffee selected by Auction Rooms, analysed by mass spectrometry. It is also a response to that data through rhythmic articulation, again using the data.";
       var duration = "7 minutes 40 seconds";
       document.getElementById("piece").innerHTML = title;
       document.getElementById("dur").innerHTML = "Dur: " + duration;
       document.getElementById("details").innerHTML = about + "<br />" + commission;
-    } else if (currentPlaying === "./audio/audio2.mp3") {
+    } else if (currentPlaying === "./audio/audio2.ogg") {
       var title2 = "Put Together To Present";
       var about2 = "Is a work that draws upon the sonic environment of Auction Rooms Cafe, North Melbourne. Field recordings, manipulations, synthesis, coffee! Warning: there are major fluctuations in the volume of this piece.";
       var duration2 = "17 minutes 24 seconds";

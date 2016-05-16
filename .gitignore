@@ -3,3 +3,4 @@ amplitudejs-master
 *.wav
 *.zip
 node_modules
+audio
