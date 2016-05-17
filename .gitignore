@@ -4,3 +4,5 @@ amplitudejs-master
 *.zip
 node_modules
 audio
+audio1.ogg
+*.ogg

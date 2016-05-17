@@ -1,4 +1,4 @@
-<-- I think this is where everything lives
+<html>
 <head>
   <script type="text/javascript">
 
@@ -8,7 +8,7 @@ function setup() {
     audioPlayer = document.getElementById('audio');
     document.getElementById('audio').addEventListener('ended', function(){
         i=i+1;
-        nextSong = "m"+i+".aif";
+        nextSong = "audio"+i+".ogg";
         audioPlayer.src = nextSong;
         audioPlayer.load();
         audioPlayer.play();
@@ -20,6 +20,6 @@ function setup() {
 <body onLoad="setup();">
 <audio id="audio"  src="m1.aif" controls="controls" autoplay="autoplay" align=""> </audio>
 <h2>Now playing:</h2>
-<h1><script><-- here lies a script to display metadata--></script></h1>
+<h1><script></script></h1>
 </body>
--->
+</html>
